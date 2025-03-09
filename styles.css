@@ -1,0 +1,186 @@
+body {
+    background: linear-gradient(135deg, #B5EAEA, #FFCBCB);
+    margin: 0;
+    transition: background 0.5s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    color: rgb(16, 59, 64);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    color: #4a4e69;
+    font-style: italic;
+}
+
+.book-form {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    margin: 20px auto;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    backdrop-filter: blur(12px);
+    color: #222;
+}
+
+.book-form div {
+    margin-bottom: 15px;
+}
+
+.book-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.book-form input, 
+.book-form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #333;
+}
+
+.book-form input::placeholder {
+    color: #777;
+}
+
+.book-form button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.book-form button:first-of-type {
+    background: linear-gradient(135deg, #6A0572, #AB83A1);
+    color: white;
+}
+
+.book-form button:last-of-type {
+    background: linear-gradient(135deg, #E63946, #F4A261);
+    color: white;
+}
+
+.book-form button:hover {
+    opacity: 0.85;
+}
+
+.addBookBtnCon {
+    display: flex;
+    justify-content: center;
+}
+
+#addBookBtn {
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background: linear-gradient(135deg, #3D348B, #7D5BA6);
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+#addBookBtn:hover {
+    box-shadow: 0px 0px 10px rgba(61, 52, 139, 0.6);
+}
+
+.book-card {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 15px;
+    width: 320px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #222;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.book-card h3 {
+    font-size: 1.4rem;
+    color: #2B2D42;
+    margin-bottom: 10px;
+}
+
+.book-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 5px 0;
+}
+
+.book-card .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.toggle-button {
+    background: linear-gradient(135deg, #0081A7, #00AFB9);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggle-button:hover {
+    background: linear-gradient(135deg, #007BAA, #009FB5);
+    box-shadow: 0px 0px 10px rgba(0, 189, 255, 0.6);
+}
+
+.remove-button {
+    background: linear-gradient(135deg, #F9844A, #F94144);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.remove-button:hover {
+    background: linear-gradient(135deg, #F97042, #F9253D);
+    box-shadow: 0px 0px 10px rgba(255, 80, 80, 0.6);
+}
+
+@media (max-width: 768px) {
+    .book-card, .book-form {
+        width: 90%;
+    }
+}
+
+.hidden {
+    display: none;
+}
