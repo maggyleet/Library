@@ -1,0 +1,68 @@
+.book-form {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.book-form div {
+    margin-bottom: 15px;
+}
+
+.book-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.book-form input, 
+.book-form select {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.book-form button {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.book-form button:first-of-type {
+    background: #28a745;
+    color: white;
+}
+
+.book-form button:last-of-type {
+    background: #dc3545;
+    color: white;
+}
+
+.book-form button:hover {
+    opacity: 0.8;
+}
+
+
+#addBookBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.book-card{
+    color: white;
+    background-color: black;
+}
