@@ -1,15 +1,28 @@
 body {
-    background: linear-gradient(135deg, #B5EAEA, #FFCBCB);
+    background: linear-gradient(69deg, #B5EAEA, #FFCBCB);
     margin: 0;
     transition: background 0.5s ease-in-out;
     font-family: 'Poppins', sans-serif;
+}
+
+.afterHead{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#library{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
 h1{
-    color: rgb(16, 59, 64);
+    color: #4a4e69;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    margin-bottom: 0;
 }
 
 h1, h2 {
@@ -46,7 +59,7 @@ h2 {
 
 .book-form input, 
 .book-form select {
-    width: 100%;
+    width: 95%;
     padding: 8px;
     border: 1px solid #aaa;
     border-radius: 5px;
@@ -126,6 +139,7 @@ h2 {
     font-size: 1.4rem;
     color: #2B2D42;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 
 .book-card p {
@@ -139,6 +153,13 @@ h2 {
     justify-content: center;
     gap: 10px;
     margin-top: 15px;
+}
+
+.button-group > button{
+    border: black solid 2px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #3D348B, #7D5BA6);
+    color: white;
 }
 
 .toggle-button {

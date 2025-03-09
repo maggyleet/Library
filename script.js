@@ -9,6 +9,17 @@ function Book(title, author, pages, readStatus) {
     this.id = crypto.randomUUID();
 }
 
+// Prototype function to toggle read status
+Book.prototype.toggleReadStatus = function () {
+    if (this.readStatus === "Read") {
+        this.readStatus = "Not Read";
+    } else if (this.readStatus === "Not Read") {
+        this.readStatus = "Reading";
+    } else {
+        this.readStatus = "Read";
+    }
+};
+
 function addBookToLibrary(title, author, pages, readStatus) {
     // take params, create a book then store it in the array
     const newBook = new Book(title, author, pages, readStatus);
@@ -53,14 +64,25 @@ function displayBooks() {
         bookCard.classList.add("book-card");
 
         bookCard.innerHTML = `
-        <h3>${book.title}</h3>
+        <h3>Title: "${book.title}"</h3>
         <p>Author: ${book.author}</p>
         <p>Pages: ${book.pages}</p>
         <p>Status: ${book.readStatus}</p>
-        <button onclick="removeBook('${book.id}')">Remove</button>
+        <div class="button-group">
+        <button onclick="toggleReadStatus('${book.id}')">Toggle Read Status</button>
+        <button onclick="removeBook('${book.id}')">Remove Book</button>
+        </div>
         `;
         libraryContainer.appendChild(bookCard);
     });
+}
+
+function toggleReadStatus(id) {
+    const book = myLibrary.find(book => book.id === id);
+    if (book) {
+        book.toggleReadStatus();
+        displayBooks();
+    }
 }
 
 function removeBook(id){
